@@ -1,0 +1,57 @@
+.App {
+  height: 100vh;
+  max-width: 1536px;
+  padding: 0 34% 0 34%;
+
+  .page-container {
+    height: 100%;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 1.5rem;
+    font-family: 'League Spartan', sans-serif;
+  }
+}
+
+@media (max-width: 1536px) {
+  .App {
+    max-width: 1280px;
+    padding: 0 32% 0 32%;
+  }
+}
+
+@media (max-width: 1280px) {
+  .App {
+    max-width: 1024px;
+    padding: 0 30% 0 30%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .App {
+    max-width: 768px;
+    padding: 0 26% 0 26%;
+  }
+}
+
+@media (max-width: 768px) {
+  .App {
+    max-width: 640px;
+    padding: 0 24% 0 24%;
+  }
+}
+
+@media (max-width: 640px) {
+  .App {
+    max-width: 475px;
+    padding: 0 21% 0 21%;
+  }
+}
+
+@media (max-width: 475px) {
+  .App {
+    max-width: 368px;
+    padding: 0 18% 0 18%;
+  }
+}

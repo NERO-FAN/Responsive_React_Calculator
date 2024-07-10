@@ -1,0 +1,179 @@
+.key-row-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  column-gap: 1.5rem;
+  height: 100%;
+
+  div {
+    width: 100%;
+    height: 100%;
+
+    button {
+      width: 100%;
+      height: 95%;
+      padding-top: 0.25rem;
+      border-radius: 0.75rem;
+      font-size: 36px;
+      border: none;
+      cursor: pointer;
+    }
+
+    .keypad-button-delete,
+    .keypad-button-reset,
+    .keypad-button-equal {
+      font-size: 25px;
+    }
+  }
+}
+
+@media (max-width: 1536px) {
+  .key-row-container {
+    max-width: 1280px;
+    column-gap: 1.5rem;
+
+    div {
+      button {
+        width: 100%;
+        height: 100%;
+        padding-top: 0.25rem;
+        border-radius: 0.75rem;
+        font-size: 36px;
+        border: none;
+        cursor: pointer;
+      }
+
+      .keypad-button-delete,
+      .keypad-button-reset,
+      .keypad-button-equal {
+        font-size: 27px;
+      }
+    }
+  }
+}
+
+@media (max-width: 1280px) {
+  .key-row-container {
+    max-width: 1024px;
+    column-gap: 1.25rem;
+
+    div {
+      button {
+        width: 100%;
+        height: 100%;
+        padding-top: 0.25rem;
+        border-radius: 0.75rem;
+        font-size: 32px;
+        border: none;
+        cursor: pointer;
+      }
+
+      .keypad-button-delete,
+      .keypad-button-reset,
+      .keypad-button-equal {
+        font-size: 24px;
+      }
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .key-row-container {
+    max-width: 768px;
+    column-gap: 1.25rem;
+
+    div {
+      button {
+        width: 100%;
+        height: 100%;
+        padding-top: 0.25rem;
+        border-radius: 0.75rem;
+        font-size: 32px;
+        border: none;
+        cursor: pointer;
+      }
+
+      .keypad-button-delete,
+      .keypad-button-reset,
+      .keypad-button-equal {
+        font-size: 22px;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .key-row-container {
+    max-width: 640px;
+    column-gap: 0.85rem;
+
+    div {
+      button {
+        width: 100%;
+        height: 100%;
+        padding-top: 0.25rem;
+        border-radius: 0.75rem;
+        font-size: 28px;
+        border: none;
+        cursor: pointer;
+      }
+
+      .keypad-button-delete,
+      .keypad-button-reset,
+      .keypad-button-equal {
+        font-size: 20px;
+      }
+    }
+  }
+}
+
+@media (max-width: 640px) {
+  .key-row-container {
+    max-width: 475px;
+    column-gap: 0.75rem;
+
+    div {
+      button {
+        width: 100%;
+        height: 100%;
+        padding-top: 0.25rem;
+        border-radius: 0.75rem;
+        font-size: 28px;
+        border: none;
+        cursor: pointer;
+      }
+
+      .keypad-button-delete,
+      .keypad-button-reset,
+      .keypad-button-equal {
+        font-size: 20px;
+      }
+    }
+  }
+}
+
+@media (max-width: 475px) {
+  .key-row-container {
+    max-width: 368px;
+    column-gap: 0.75rem;
+
+    div {
+      button {
+        width: 100%;
+        height: 100%;
+        padding-top: 0.25rem;
+        border-radius: 0.25rem;
+        font-size: 24px;
+        border: none;
+        cursor: pointer;
+      }
+
+      .keypad-button-delete,
+      .keypad-button-reset,
+      .keypad-button-equal {
+        font-size: 18px;
+      }
+    }
+  }
+}
