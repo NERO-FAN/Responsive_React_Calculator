@@ -7,9 +7,9 @@
   padding: 5% 5% 5% 5%;
   row-gap: 7.5%;
 
-  @media (min-width: 768px) and (max-width: 1024px) {
+  @media (max-width: 399px) {
     padding: 6.5%;
-    row-gap: 5%;
+    row-gap: 4.5%;
   }
 
   @media (max-width: 568px) {
@@ -17,8 +17,8 @@
     row-gap: 5%;
   }
 
-  @media (max-width: 399px) {
+  @media (min-width: 768px) and (max-width: 1024px) {
     padding: 6.5%;
-    row-gap: 4.5%;
+    row-gap: 5%;
   }
 }

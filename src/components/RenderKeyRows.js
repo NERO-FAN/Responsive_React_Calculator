@@ -18,7 +18,7 @@ const RenderKeyRows = ({keyArray, start, end, theme, value}) => {
                         style={{
                             backgroundColor: `${item[`color${theme}`]}`,
                             color: `${item[`fontColor${theme}`]}`,
-                            boxShadow: `0 3.5px ${item[`keyShadow${theme}`]}`,
+                            boxShadow: `0 0.20rem ${item[`keyShadow${theme}`]}`,
                             fontFamily: 'League Spartan'
                         }}
                         onClick={() => sendValue(index, item)}>
