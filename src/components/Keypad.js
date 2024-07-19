@@ -115,7 +115,7 @@ const Keypad = ({ theme, currentOutput }) => {
     
     useEffect(() => {
         currentOutput(addCommas(currentValue));
-    },[currentValue]);
+    },[currentValue, currentOutput]);
     
     
     return (
