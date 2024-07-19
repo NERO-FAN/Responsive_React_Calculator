@@ -9,12 +9,12 @@
 
   @media (max-width: 399px) {
     padding: 6.5%;
-    row-gap: 20rem;
+    row-gap: 0.25em;
   }
 
   @media (min-width: 400px) and (max-width: 568px) {
     padding: 7%;
-    row-gap: 20rem;
+    row-gap: 0.5em;
   }
 
   @media (min-width: 768px) and (max-width: 1024px) {
