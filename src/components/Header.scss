@@ -5,8 +5,12 @@
   padding-bottom: 0.75rem;
   width: 100%;
 
-  @media (max-width: 568px) {
-    font-size: 12px;
+  @media (max-width: 399px) {
+   font-size: 0.75em;
+  }
+
+  @media (min-width: 400px) and (max-width: 568px) {
+    font-size: 0.875em;
   }
 
   @media (min-width: 1920px) {
@@ -38,7 +42,7 @@
 
     @media (max-width: 568px) {
       width: 55%;
-      margin-bottom: 2%;
+      margin-bottom: 1.5%;
     }
   }
 
@@ -51,7 +55,12 @@
     margin-left: auto;
     height: 150%;
 
-    @media (max-width: 568px) {
+    @media (max-width: 399px) {
+      height: 120%;
+      width: 20.5%;
+    }
+
+    @media (min-width: 400px) and (max-width: 568px) {
       height: 137.5%;
       width: 20.5%;
     }
@@ -81,7 +90,7 @@
 
         .button {
           margin-left: 5%;
-          height: 65%;
+          height: 60%;
           width: 25%;
           border-radius: 4rem;
           border: none;

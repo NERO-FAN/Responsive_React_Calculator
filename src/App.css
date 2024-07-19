@@ -15,13 +15,13 @@
     font-family: 'League Spartan', sans-serif;
 
     @media (max-width: 399px) {
-      height: 75%;
+      height: 85%;
       width: 87.5%;
       row-gap: 3.5%;
     }
 
     @media (min-width: 400px) and (max-width: 568px)  {
-      height: 80%;
+      height: 77.5%;
       width: 87.5%;
       row-gap: 3.5%;
     }

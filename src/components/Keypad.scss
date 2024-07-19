@@ -8,13 +8,13 @@
   row-gap: 7.5%;
 
   @media (max-width: 399px) {
-    padding: 6.5%;
-    row-gap: 0.25em;
+    padding: 1.5em;
+    row-gap: 1em;
   }
 
   @media (min-width: 400px) and (max-width: 568px) {
-    padding: 7%;
-    row-gap: 0.5em;
+    padding: 1.75em;
+    row-gap: 1.5em;
   }
 
   @media (min-width: 768px) and (max-width: 1024px) {
