@@ -8,7 +8,6 @@ const Header = ({ onButtonClick }) => {
     
     const handleClick = () => {
         count !== 3 ? setCount(count + 1) : setCount(1);
-        const buttonElement = document.querySelector('.button');
         const buttonContainer = document.querySelector('.button-container');
         
         console.log(count);
