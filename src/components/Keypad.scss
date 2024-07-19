@@ -9,10 +9,10 @@
 
   @media (max-width: 399px) {
     padding: 6.5%;
-    row-gap: 100rem;
+    row-gap: 4.5%;
   }
 
-  @media (max-width: 568px) {
+  @media (min-width: 400px) and (max-width: 568px) {
     padding: 7%;
     row-gap: 5%;
   }
