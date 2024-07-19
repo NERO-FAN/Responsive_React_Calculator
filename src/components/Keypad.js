@@ -45,7 +45,7 @@ const Keypad = ({ theme, currentOutput }) => {
                 curr = '0'
         }
         else if ((/^\d$/.test(input) || input === '.') && currentOperator !== '') {
-            if (firstNumber === '' && input === '.'){
+            if (secondNumber === '' && input === '.'){
                 curr = '0' + input;
                 setSecondNumber(curr);
             }
@@ -53,7 +53,7 @@ const Keypad = ({ theme, currentOutput }) => {
                 curr = input;
                 setSecondNumber(curr);
             }
-            else if (secondNumber === '') {
+            else if (secondNumber !== '') {
                 curr = secondNumber + input;
                 setSecondNumber(curr);
             }
@@ -107,8 +107,14 @@ const Keypad = ({ theme, currentOutput }) => {
         setCurrentValue(curr);
     }
     
+    const addCommas = (val) => {
+        const num = parseFloat(val);
+        val = num.toLocaleString();
+        return val;
+    }
+    
     useEffect(() => {
-        currentOutput(currentValue);
+        currentOutput(addCommas(currentValue));
     },[currentValue]);
     
     

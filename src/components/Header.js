@@ -13,46 +13,41 @@ const Header = ({ onButtonClick }) => {
         
         console.log(count);
         
-        count === 1 && !buttonContainer.classList.contains('button-container-2') ?
-            buttonContainer.classList.add('button-container-2') : buttonContainer.classList.remove('button-container-2');
+        if (count === 1)
+            buttonContainer.classList.add('button-container-2');
+        else
+            buttonContainer.classList.remove('button-container-2');
         
-        count === 2 && !buttonElement.classList.contains('button-container-3') ?
-            buttonElement.classList.add('button-container-3') : buttonElement.classList.remove('button-container-3');
+        if (count === 2)
+            buttonContainer.classList.add('button-container-3');
+        else
+            buttonContainer.classList.remove('button-container-3');
     }
     
     useEffect(() => {
         onButtonClick(count); // This will log the updated count value
-    }, [count]);
+    }, [count, onButtonClick]);
     
     return (
         <div className="header" style={{color: `${backGroundColors[`textColor${count}`]}`}}>
-            <p className="app-name" >
-                    <a>calc</a>
-            </p>
-            <div className="theme-options">
+            <div className="app-name" >
+                    <span>calc</span>
+            </div>
+            <span className="theme-text">THEME</span>
+            <div className="theme-changer">
                 <div className="theme-levels">
-                    <div>
-                    
-                    </div>
-                    <div className="level-values">
-                        <a style={{marginRight: "18px"}}>1</a>
-                        <a>2</a>
-                        <a style={{marginLeft: "18px"}}>3</a>
-                    </div>
+                    <span>1</span>
+                    <span>2</span>
+                    <span>3</span>
                 </div>
-                <div className="theme-changer">
-                    <a className="theme-text">THEME</a>
-                    <div className="button-area">
-                        <div className="button-container"
-                            style={{ backgroundColor: `${backGroundColors[`keyPadColor${count}`]}` }}>
-                            <button className="button"
-                                style={{backgroundColor: `${backGroundColors[`buttonColor${count}`]}` }}
-                                onClick={() => handleClick()}>
-                                
-                            </button>
-                        </div>
+                <div className="button-area">
+                    <div className="button-container"
+                        style={{backgroundColor: `${backGroundColors[`keyPadColor${count}`]}`}}>
+                        <button className="button"
+                            style={{backgroundColor: `${backGroundColors[`buttonColor${count}`]}`}}
+                            onClick={() => handleClick()}>
+                        </button>
                     </div>
-                
                 </div>
             </div>
         </div>

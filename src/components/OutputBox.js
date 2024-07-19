@@ -7,9 +7,9 @@ const OutputBox = ({ theme, showOutput }) => {
         <div className="output-container"
             style={{backgroundColor: `${backGroundColors[`outPutColor${theme}`]}`}}
         >
-            <p className="output" style={{color: `${backGroundColors[`textColor${theme}`]}`}}>
+            <span className="output" style={{color: `${backGroundColors[`textColor${theme}`]}`}}>
                 {showOutput}
-            </p>
+            </span>
         </div>
     );
 }
