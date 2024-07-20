@@ -8,8 +8,8 @@
   row-gap: 7.5%;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 1.5em;
-  padding-bottom: 1.5em;
+  padding-top: 7%;
+  padding-bottom: 7%;
   justify-content: center;
 
   @media (max-width: 399px) {
@@ -18,7 +18,7 @@
   }
 
   @media (min-width: 400px) and (max-width: 568px) {
-    row-gap: 1.5em;
+    row-gap: 5%;
   }
 
   @media (min-width: 768px) and (max-width: 1024px) {
