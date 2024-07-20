@@ -4,14 +4,12 @@
   margin: auto;
   height: 100%;
   width: 100%;
-  column-gap: 5%;
 
   @media (max-width: 399px) {
     column-gap: 0.875em;
   }
 
   @media (min-width: 400px) and (max-width: 568px) {
-    column-gap: 2%;
   }
 
   div {
