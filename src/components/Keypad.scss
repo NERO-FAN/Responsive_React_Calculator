@@ -14,7 +14,8 @@
     row-gap: 1em;
   }
 
-  @media (min-width: 400px) and (max-width: 568px) {
+  @media (min-width: 400px) and (max-width: 768px) {
+    row-gap: 5%;
   }
 
   @media (min-width: 768px) and (max-width: 1024px) {
