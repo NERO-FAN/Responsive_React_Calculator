@@ -52,13 +52,7 @@
     }
 
     .keypad-button-delete {
-      @media (max-width: 399px) {
-        font-size: 1.5em;
-      }
 
-      @media (min-width: 400px) and (max-width: 568px) {
-        font-size: 1.675em;
-      }
     }
 
     .keypad-button-reset,
