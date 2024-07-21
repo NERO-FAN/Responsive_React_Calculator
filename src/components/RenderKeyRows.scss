@@ -3,7 +3,7 @@
   flex-direction: row;
   height: 100%;
   width: 87.5%;
-  justify-content: space-between;
+  justify-content: space-evenly;
   margin-left: auto;
   margin-right: auto;
   column-gap: 3.5%;
@@ -49,10 +49,6 @@
       @media (min-width: 2400px) {
         font-size: 64px;
       }
-    }
-
-    .keypad-button-delete {
-
     }
 
     .keypad-button-reset,
