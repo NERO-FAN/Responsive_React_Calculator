@@ -3,9 +3,7 @@
   flex-direction: row;
   height: 100%;
   width: 100%;
-  justify-content: space-evenly;
-  margin-left: auto;
-  margin-right: auto;
+  justify-content: center;
 
   div {
     width: 100%;
@@ -31,7 +29,7 @@
       }
 
       @media (min-width: 400px) and (max-width: 568px) {
-        width: 75%;
+        width: 85%;
         border-radius: 7.5%;
         font-size: 2.25em;
       }
