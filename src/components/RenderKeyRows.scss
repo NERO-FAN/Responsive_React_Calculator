@@ -24,12 +24,6 @@
     margin: auto;
     justify-content: center;
 
-    @media (min-width: 400px) and (max-width: 568px) {
-      .keypad-button-reset,
-      .keypad-button-equal {
-        width: 95%;
-      }
-    }
 
     button {
       width: 100%;
@@ -48,7 +42,7 @@
       @media (min-width: 400px) and (max-width: 568px) {
         width: 85%;
         border-radius: 7.5%;
-        font-size: 2.25em;
+        font-size: 1.25em;
       }
 
       @media (min-width: 768px) and (max-width: 1024px) {
@@ -65,31 +59,7 @@
       }
     }
 
-    .keypad-button-delete,
-    .keypad-button-reset,
-    .keypad-button-equal {
-      font-size: 27px;
 
-      @media (max-width: 399px) {
-        font-size: 1.25em;
-      }
-
-      @media (min-width: 400px) and (max-width: 568px) {
-        font-size: 1.675em;
-      }
-
-      @media (min-width: 768px) and (max-width: 1024px) {
-        font-size: 33px;
-      }
-
-      @media (min-width: 1920px) {
-        font-size: 33px;
-      }
-
-      @media (min-width: 2400px) {
-        font-size: 42px;
-      }
-    }
   }
 }
 
