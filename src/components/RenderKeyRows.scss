@@ -22,6 +22,14 @@
     display: flex;
     flex-direction: row;
     margin: auto;
+    justify-content: center;
+
+    @media (min-width: 400px) and (max-width: 568px) {
+      .keypad-button-reset,
+      .keypad-button-equal {
+        width: 95%;
+      }
+    }
 
     button {
       width: 100%;
@@ -38,6 +46,7 @@
       }
 
       @media (min-width: 400px) and (max-width: 568px) {
+        width: 85%;
         border-radius: 7.5%;
         font-size: 2.25em;
       }
