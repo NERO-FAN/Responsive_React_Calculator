@@ -18,6 +18,7 @@ const Keypad = ({ theme, currentOutput }) => {
     
     const handleClicked = (input) => {
         
+        const overflowLimit = 999999999;
         let curr = '';
         const isNumber = (/^\d$/.test(input) || input === '.') && currentOperator === '';
         const isOperator = input === 'x' || input === '+' || input === '-' || input === '/';
@@ -29,36 +30,44 @@ const Keypad = ({ theme, currentOutput }) => {
         }
         
         if (isNumber) {
-            if (firstNumber === '' && input === '.'){
-                curr = '0' + input;
+            if (currentValue.length < 9) {
+                if (firstNumber === '' && input === '.') {
+                    curr = '0' + input;
+                    setFirstNumber(curr);
+                } else if (firstNumber === '' && input !== '0') {
+                    curr = input;
+                    setFirstNumber(curr);
+                } else if (firstNumber !== '') {
+                    curr = firstNumber + input;
+                    setFirstNumber(curr);
+                } else
+                    curr = '0';
+            }
+            else {
+                curr = currentValue;
                 setFirstNumber(curr);
             }
-            else if (firstNumber === '' && input !== '0') {
-                curr = input;
-                setFirstNumber(curr);
-            }
-            else if (firstNumber !== '') {
-                curr = firstNumber + input;
-                setFirstNumber(curr);
-            }
-            else
-                curr = '0';
         }
         else if ((/^\d$/.test(input) || input === '.') && currentOperator !== '') {
-            if (secondNumber === '' && input === '.'){
-                curr = '0' + input;
+            if (secondNumber.length < 9) {
+                if (secondNumber === '' && input === '.') {
+                    curr = '0' + input;
+                    setSecondNumber(curr);
+                } else if (secondNumber === '') {
+                    curr = input;
+                    setSecondNumber(curr);
+                } else if (secondNumber !== '') {
+                    curr = secondNumber + input;
+                    setSecondNumber(curr);
+                } else if (secondNumber === '0' && input !== '.') {
+                    curr = input;
+                    setSecondNumber(curr);
+                }
+            }
+            else {
+                curr = currentValue;
                 setSecondNumber(curr);
             }
-            else if (secondNumber === '' && input !== '0') {
-                curr = input;
-                setSecondNumber(curr);
-            }
-            else if (secondNumber !== '') {
-                curr = secondNumber + input;
-                setSecondNumber(curr);
-            }
-            else
-                curr = '0'
         }
         else if (isOperator) {
             setCurrentOperator(input);
@@ -67,16 +76,19 @@ const Keypad = ({ theme, currentOutput }) => {
         else if (input === '=') {
             switch (currentOperator) {
                 case '+':
-                    curr = '' + (parseFloat(firstNumber) + parseFloat(secondNumber));
+                    const sum = (parseFloat(firstNumber) + parseFloat(secondNumber));
+                    curr = '' + sum > overflowLimit ? overflowLimit : sum;
                     break;
                 case '-':
                     curr = '' + (parseFloat(firstNumber) - parseFloat(secondNumber));
                     break;
                 case 'x':
-                    curr = '' + (parseFloat(firstNumber) * parseFloat(secondNumber));
+                    const product = (parseFloat(firstNumber) * parseFloat(secondNumber));
+                    curr = '' + product > overflowLimit ? overflowLimit : product;
                     break;
                 case '/':
-                    curr = '' + (parseFloat(firstNumber) / parseFloat(secondNumber));
+                    const quotient = (parseFloat(firstNumber) / parseFloat(secondNumber));
+                    curr = '' + quotient > overflowLimit ? overflowLimit : quotient;
                     break;
                 default:
                     curr = '0';
@@ -114,8 +126,7 @@ const Keypad = ({ theme, currentOutput }) => {
     }
     
     useEffect(() => {
-        if (currentValue.length <= 9)
-            currentOutput(addCommas(currentValue));
+        currentOutput(addCommas(currentValue));
     },[currentValue, currentOutput]);
     
     
