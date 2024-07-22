@@ -35,12 +35,19 @@
 
     @media (min-width: 1024px) and (max-width: 1600px) {
       height: 80%;
-      width: 36%;
+      width: 37%;
     }
 
-    @media (min-width: 1601px) and (max-width: 1920px) {
+    @media (min-width: 1601px) and (max-width: 1920px){
       height: 80%;
-      width: 31%;
+      width: 34%;
+      row-gap: 3%;
+    }
+
+    @media (min-width: 1921px) {
+      height: 80%;
+      width: 38%;
+      row-gap: 3%;
     }
   }
 }

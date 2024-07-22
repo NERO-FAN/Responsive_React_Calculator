@@ -7,25 +7,25 @@
 
   @media (max-width: 399px) {
     .app-name {
-      font-size: 2.5em;
+      font-size: 2.25em;
     }
   }
 
   @media (min-width: 400px) and (max-width: 767px) {
     .app-name {
-      font-size: 2.125em;
+      font-size: 2.375em;
     }
   }
 
   @media (min-width: 768px) and (max-width: 1023px) {
     .app-name {
-      font-size: 2.125em;
+      font-size: 2.875em;
     }
   }
 
   @media (min-width: 1024px) and (max-width: 1600px) {
     .app-name {
-      font-size: 2em;
+      font-size: 2.5em;
     }
   }
 
@@ -37,18 +37,60 @@
 
   @media (min-width: 2400px) {
     .app-name {
-      font-size: 1.875em;
+      font-size: 3.25em;
     }
   }
 
   .theme-text {
-    width: 67.5%;
     display: flex;
     justify-content: flex-end;
-    margin-bottom: 1%;
 
-    @media (max-width: 767px) {
+    @media (max-width: 399px) {
+      font-size: 0.75em;
+      letter-spacing: 0.125em;
       width: 55%;
+      margin-bottom: 1.5%;
+    }
+
+    @media (min-width: 400px) and (max-width: 767px) {
+      font-size: 0.875em;
+      letter-spacing: 0.125em;
+      width: 57.5%;
+      margin-bottom: 1.5%;
+    }
+
+    @media (min-width: 768px) and (max-width: 1023px) {
+      font-size: 1em;
+      letter-spacing: 0.125em;
+      width: 57.5%;
+      margin-bottom: 1.5%;
+    }
+
+    @media (min-width: 1024px) and (max-width: 1280px) {
+      font-size: 0.875em;
+      letter-spacing: 0.125em;
+      width: 60%;
+      margin-bottom: 1.5%;
+    }
+
+    @media (min-width: 1281px) and (max-width: 1600px) {
+      font-size: 0.875em;
+      letter-spacing: 0.125em;
+      width: 67.5%;
+      margin-bottom: 1.5%;
+    }
+
+    @media (min-width: 1601px) {
+      font-size: 1em;
+      letter-spacing: 0.125em;
+      width: 67.5%;
+      margin-bottom: 1.5%;
+    }
+
+    @media (min-width: 2400px) {
+      font-size: 1.25em;
+      letter-spacing: 0.125em;
+      width: 72.5%;
       margin-bottom: 1.5%;
     }
   }
@@ -73,22 +115,28 @@
     }
 
     @media (min-width: 768px) and (max-width: 1023px) {
-
+      height: 137.5%;
+      width: 20.5%;
     }
 
     @media (min-width: 1024px) and (max-width: 1280px) {
-      height: 150%;
-      width: 15%;
+      height: 125%;
+      width: 17.5%;
     }
 
     @media (min-width: 1281px) and (max-width: 1600px) {
-      height: 155%;
-      width: 13%;
+      height: 125%;
+      width: 12.5%;
     }
 
-    @media (min-width: 1601px) {
-      height: 150%;
+    @media (min-width: 1601px) and (max-width: 2309px) {
+      height: 145%;
       width: 15%;
+    }
+
+    @media (min-width: 2400px) {
+      height: 145%;
+      width: 12.5%;
     }
 
     .theme-levels {
@@ -97,6 +145,30 @@
       margin-bottom: 0.25rem;
       column-gap: 27.5%;
       justify-content: center;
+
+      @media (max-width: 399px) {
+        font-size: 0.75em;
+      }
+
+      @media (min-width: 400px) and (max-width: 767px) {
+        font-size: 0.875em;
+      }
+
+      @media (min-width: 768px) and (max-width: 1023px) {
+        font-size: 1em;
+      }
+
+      @media (min-width: 1024px) and (max-width: 1600px) {
+        font-size: 0.875em;
+      }
+
+      @media (min-width: 1601px) {
+        font-size: 1em;
+      }
+
+      @media (min-width: 2400px) {
+        font-size: 1.25em;
+      }
     }
 
     .button-area {
@@ -128,6 +200,7 @@
 
         .button {
           margin-left: 0;
+          margin-right: 0;
           height: 60%;
           width: 22.5%;
           border-radius: 4rem;

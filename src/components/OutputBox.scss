@@ -1,5 +1,5 @@
 .output-container {
-  height: 30%;
+  height: 26.5%;
   border-radius: 0.75rem;
   display: flex;
   align-items: center;
@@ -16,24 +16,31 @@
   span {
     display: flex;
     justify-content: flex-end;
-    font-size: 52px;
     font-weight: 700;
-    padding: 5%;
+    padding-right: 5%;
 
     @media (max-width: 399px) {
-      font-size: 2.25em;
+      font-size: 2.5em;
     }
 
     @media (min-width: 400px) and (max-width: 767px) {
       font-size: 2.75em;
     }
 
-    @media (min-width: 1920px) {
-      font-size: 62px;
+    @media (min-width: 768px) and (max-width: 1023px) {
+      font-size: 3.875em;
+    }
+
+    @media (min-width: 1024px) and (max-width: 1600px) {
+      font-size: 3.25em;
+    }
+
+    @media (min-width: 1601px) {
+      font-size: 4em;
     }
 
     @media (min-width: 2400px) {
-      font-size: 82px;
+      font-size: 5.375em;
     }
   }
 }
