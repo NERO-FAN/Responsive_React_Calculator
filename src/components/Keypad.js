@@ -42,7 +42,7 @@ const Keypad = ({ theme, currentOutput }) => {
                 setFirstNumber(curr);
             }
             else
-                curr = '0'
+                curr = '0';
         }
         else if ((/^\d$/.test(input) || input === '.') && currentOperator !== '') {
             if (secondNumber === '' && input === '.'){
@@ -114,7 +114,8 @@ const Keypad = ({ theme, currentOutput }) => {
     }
     
     useEffect(() => {
-        currentOutput(addCommas(currentValue));
+        if (currentValue.length <= 9)
+            currentOutput(addCommas(currentValue));
     },[currentValue, currentOutput]);
     
     
