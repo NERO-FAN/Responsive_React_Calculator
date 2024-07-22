@@ -52,17 +52,24 @@
       margin-bottom: 1.5%;
     }
 
-    @media (min-width: 400px) and (max-width: 767px) {
+    @media (min-width: 400px) and (max-width: 499px) {
       font-size: 0.875em;
       letter-spacing: 0.125em;
       width: 57.5%;
       margin-bottom: 1.5%;
     }
 
+    @media (min-width: 500px) and (max-width: 767px) {
+      font-size: 0.875em;
+      letter-spacing: 0.125em;
+      width: 62.5%;
+      margin-bottom: 1.5%;
+    }
+
     @media (min-width: 768px) and (max-width: 1023px) {
       font-size: 1em;
       letter-spacing: 0.125em;
-      width: 57.5%;
+      width: 62.5%;
       margin-bottom: 1.5%;
     }
 
@@ -120,8 +127,8 @@
     }
 
     @media (min-width: 768px) and (max-width: 1023px) {
-      height: 137.5%;
-      width: 20.5%;
+      height: 132.5%;
+      width: 18.5%;
     }
 
     @media (min-width: 1024px) and (max-width: 1280px) {
