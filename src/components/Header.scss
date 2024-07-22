@@ -6,31 +6,38 @@
   width: 100%;
 
   @media (max-width: 399px) {
-   font-size: 0.75em;
+    .app-name {
+      font-size: 2.5em;
+    }
   }
 
   @media (min-width: 400px) and (max-width: 767px) {
-    font-size: 0.875em;
+    .app-name {
+      font-size: 2.125em;
+    }
   }
 
-  @media (min-width: 1920px) {
-    font-size: 22px;
+  @media (min-width: 768px) and (max-width: 1023px) {
+    .app-name {
+      font-size: 2.125em;
+    }
+  }
+
+  @media (min-width: 1024px) and (max-width: 1600px) {
+    .app-name {
+      font-size: 2em;
+    }
+  }
+
+  @media (min-width: 1601px) {
+    .app-name {
+      font-size: 2.375em;
+    }
   }
 
   @media (min-width: 2400px) {
-    font-size: 28px;
-  }
-
-  .app-name {
-    margin-bottom: auto;
-    font-size: 36px;
-
-    @media (min-width: 1920px) {
-      font-size: 48px;
-    }
-
-    @media (min-width: 2400px) {
-      font-size: 60px;
+    .app-name {
+      font-size: 1.875em;
     }
   }
 
@@ -40,7 +47,7 @@
     justify-content: flex-end;
     margin-bottom: 1%;
 
-    @media (max-width: 568px) {
+    @media (max-width: 767px) {
       width: 55%;
       margin-bottom: 1.5%;
     }
@@ -60,9 +67,28 @@
       width: 20.5%;
     }
 
-    @media (min-width: 400px) and (max-width: 568px) {
+    @media (min-width: 400px) and (max-width: 767px) {
       height: 137.5%;
       width: 20.5%;
+    }
+
+    @media (min-width: 768px) and (max-width: 1023px) {
+
+    }
+
+    @media (min-width: 1024px) and (max-width: 1280px) {
+      height: 150%;
+      width: 15%;
+    }
+
+    @media (min-width: 1281px) and (max-width: 1600px) {
+      height: 155%;
+      width: 13%;
+    }
+
+    @media (min-width: 1601px) {
+      height: 150%;
+      width: 15%;
     }
 
     .theme-levels {
@@ -91,7 +117,7 @@
         .button {
           margin-left: 5%;
           height: 60%;
-          width: 25%;
+          width: 22.5%;
           border-radius: 4rem;
           border: none;
         }
@@ -102,8 +128,8 @@
 
         .button {
           margin-left: 0;
-          height: 65%;
-          width: 25%;
+          height: 60%;
+          width: 22.5%;
           border-radius: 4rem;
           border: none;
         }
@@ -112,9 +138,9 @@
         justify-content: flex-end;
 
         .button {
-          margin-right: 2.5%;
-          height: 65%;
-          width: 25%;
+          margin-right: 5%;
+          height: 60%;
+          width: 22.5%;
           border-radius: 4rem;
           border: none;
         }

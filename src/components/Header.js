@@ -29,7 +29,7 @@ const Header = ({ onButtonClick }) => {
     
     return (
         <div className="header" style={{color: `${backGroundColors[`textColor${count}`]}`}}>
-            <div className="app-name" >
+            <div className="app-name">
                     <span>calc</span>
             </div>
             <span className="theme-text">THEME</span>
