@@ -31,7 +31,11 @@
       font-size: 3.875em;
     }
 
-    @media (min-width: 1024px) and (max-width: 1600px) {
+    @media (min-width: 1024px) and (max-width: 1379px) {
+      font-size: 2.75em;
+    }
+
+    @media (min-width: 1380px) and (max-width: 1600px) {
       font-size: 3.25em;
     }
 
