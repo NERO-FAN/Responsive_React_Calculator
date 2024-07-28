@@ -25,13 +25,13 @@
 
   @media (min-width: 1024px) and (max-width: 1600px) {
     .app-name {
-      font-size: 2.5em;
+      font-size: 1.875em;
     }
   }
 
   @media (min-width: 1601px) {
     .app-name {
-      font-size: 2.375em;
+      font-size: 2.25em;
     }
   }
 
@@ -74,24 +74,24 @@
     }
 
     @media (min-width: 1024px) and (max-width: 1280px) {
-      font-size: 0.875em;
+      font-size: 0.675em;
       letter-spacing: 0.125em;
-      width: 60%;
-      margin-bottom: 1.5%;
+      width: 70%;
+      margin-bottom: 1%;
     }
 
     @media (min-width: 1281px) and (max-width: 1600px) {
-      font-size: 0.875em;
+      font-size: 0.75em;
       letter-spacing: 0.125em;
-      width: 67.5%;
-      margin-bottom: 1.5%;
+      width: 72.5%;
+      margin-bottom: 1%;
     }
 
     @media (min-width: 1601px) {
-      font-size: 1em;
+      font-size: 0.875em;
       letter-spacing: 0.125em;
-      width: 67.5%;
-      margin-bottom: 1.5%;
+      width: 72.5%;
+      margin-bottom: 1%;
     }
 
     @media (min-width: 2400px) {
@@ -133,28 +133,28 @@
 
     @media (min-width: 1024px) and (max-width: 1280px) {
       height: 125%;
-      width: 17.5%;
+      width: 13.5%;
     }
 
     @media (min-width: 1281px) and (max-width: 1600px) {
-      height: 132.5%;
-      width: 15%;
+      height: 135%;
+      width: 12.5%;
     }
 
     @media (min-width: 1601px) and (max-width: 2309px) {
-      height: 150%;
-      width: 15%;
+      height: 145%;
+      width: 12.5%;
     }
 
     @media (min-width: 2400px) {
-      height: 145%;
+      height: 135%;
       width: 12.5%;
     }
 
     .theme-levels {
       width: 100%;
       display: flex;
-      margin-bottom: 0.25rem;
+      margin-bottom: 0.375em;
       column-gap: 25%;
       justify-content: center;
 
@@ -171,7 +171,7 @@
       }
 
       @media (min-width: 1024px) and (max-width: 1600px) {
-        font-size: 0.875em;
+        font-size: 0.75em;
       }
 
       @media (min-width: 1601px) {
@@ -202,7 +202,7 @@
           margin-left: 5%;
           height: 60%;
           width: 22.5%;
-          border-radius: 4rem;
+          border-radius: 1em;
           border: none;
         }
 
