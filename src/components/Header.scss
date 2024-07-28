@@ -184,6 +184,8 @@
     }
 
     .button-area {
+      padding: 0;
+      margin: 0;
       height: 100%;
       width: 100%;
       display: flex;
@@ -191,6 +193,8 @@
       align-items: center;
 
       .button-container {
+        margin: 0;
+        padding: 0;
         border-radius: 2rem;
         display: flex;
         width: 100%;
@@ -199,21 +203,12 @@
         align-items: center;
 
         .button {
+          padding: 0;
           margin-left: 5%;
           height: 60%;
           width: 22.5%;
           border-radius: 1em;
           border: none;
-        }
-
-        @media (max-width: 500px) {
-          width: 5em;
-          height: 1.5em;
-
-          .button {
-            height: 1em;
-            width: 1.125em;
-          }
         }
       }
 
